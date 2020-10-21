@@ -12,5 +12,8 @@
             "App\\" : "src/"
     }
 },
-    "require": {}
+    "require": {
+        "ehime/hello-world": "^1.0",
+        "twig/twig": "^3.0"
+    }
 }
