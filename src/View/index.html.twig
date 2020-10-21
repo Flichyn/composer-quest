@@ -1,7 +1,17 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}
+    Products | Twig Quest
+{% endblock %}
+
 {% block content %}
-    {% for item in products %}
-        The product {{ item }} is very good !
-    {% endfor %}
+    {% for product in products %}
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2 class="card-title">{{ product }}</h2>
+                </div>
+            </div>
+        </div>
+    {%  endfor %}
 {% endblock %}
